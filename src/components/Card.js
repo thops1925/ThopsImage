@@ -16,7 +16,7 @@ function Card({ setItemResult }) {
                 className="max-w-sm rounded overflow-hidden shadow-lg my-10"
               >
                 <img
-                  src={item.photo[1]}
+                  src={item.photo[3]}
                   onClick={() => itemResult(item.photo)}
                   alt=""
                   className="w-full"

@@ -6,6 +6,7 @@ import Card from '../components/Card';
 
 export default function Gallery() {
   const [isSlideOpen, setSlideOpen] = useState(false);
+
   const [isItem, setItem] = useState([]);
 
   const slideOpen = () => {
