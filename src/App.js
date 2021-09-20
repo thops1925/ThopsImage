@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <>
-      <Navbar toggle={toggle} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path="/" exact component={Home} />

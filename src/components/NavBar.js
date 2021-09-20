@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom';
 export default function NavBar({ toggle }) {
   return (
     <nav
-      className="flex px-4 sticky top-0
-      justify-between items-center
+      className="flex px-4 sticky top-0 pt-2
+      justify-between 
+      md:justify-center md:items-center
        h-16 bg-white text-black 
        mx-90 shadow-sm font-mono "
       role="navigation"
     >
       <Link
         to="/"
-        className="h-14 w-14 rounded-full text-sm 
+        className="h-14 w-14 rounded-full text-sm
         bg-black text-gray-200 flex select-none
             border-4 border-red-900 justify-center 
             items-center overflow-hidden  justify md:ml-32"
@@ -24,7 +25,7 @@ export default function NavBar({ toggle }) {
         <svg
           onClick={toggle}
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="h-12 w-6"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -41,14 +42,14 @@ export default function NavBar({ toggle }) {
         <Link className="p-4" to="/">
           Home
         </Link>
-        <Link className="p-4" to="/Gallery" onClick={toggle}>
-          Gallery
+        <Link className="p-4" to="/Gallery">
+          Portfolio
         </Link>
         <Link className="p-4" to="/Contact">
-          Contact
+          Say Hello
         </Link>
         <Link className="p-4" to="/About">
-          About
+          Stories
         </Link>
       </div>
     </nav>

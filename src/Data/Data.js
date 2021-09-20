@@ -3,18 +3,6 @@ import { v4 as uuidv4 } from 'uuid';
 const Data = [
   {
     id: uuidv4(),
-    title: 'Thopshot',
-    photo: [
-      './images/beach/1.jpg',
-      './images/beach/2.jpg',
-      './images/beach/3.jpg',
-      './images/beach/4.jpg',
-      './images/beach/1.jpg',
-      './images/beach/2.jpg',
-    ],
-  },
-  {
-    id: uuidv4(),
     title: 'beach',
     photo: [
       './images/ariane/1.jpg',
@@ -35,6 +23,31 @@ const Data = [
       './images/JP/3.jpg',
       './images/JP/4.jpg',
       './images/JP/5.jpg',
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: 'beach',
+    photo: [
+      './images/santo/1.jpg',
+      './images/santo/3.jpg',
+      './images/santo/4.jpg',
+      './images/santo/2.jpg',
+      './images/santo/5.jpg',
+      './images/santo/7.jpg',
+      './images/santo/8.jpg',
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: 'beach',
+    photo: [
+      './images/pau/1.jpg',
+      './images/pau/2.jpg',
+      './images/pau/3.jpg',
+      './images/pau/4.jpg',
+      './images/pau/5.jpg',
+      './images/pau/6.jpg',
     ],
   },
 ];
