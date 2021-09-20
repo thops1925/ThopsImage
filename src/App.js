@@ -1,12 +1,12 @@
-import Navbar from "./components/NavBar";
-import { Switch, Route } from "react-router-dom";
-import React, { useState } from "react";
-import Home from "./Pages/Home";
-import Footer from "./components/Footer";
-import Gallery from "./Pages/Gallery";
-import Contact from "./Pages/Contact";
-import About from "./Pages/About";
-import Dropdown from "./components/Dropdown";
+import Navbar from './components/NavBar';
+import { Switch, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import Home from './Pages/Home';
+import Footer from './components/Footer';
+import Gallery from './Pages/Gallery';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
+import Dropdown from './components/Dropdown';
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <>
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path="/" exact component={Home} />

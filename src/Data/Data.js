@@ -26,6 +26,17 @@ const Data = [
       './images/ariane/7.jpg',
     ],
   },
+  {
+    id: uuidv4(),
+    title: 'beach',
+    photo: [
+      './images/JP/1.jpg',
+      './images/JP/2.jpg',
+      './images/JP/3.jpg',
+      './images/JP/4.jpg',
+      './images/JP/5.jpg',
+    ],
+  },
 ];
 
 export default Data;

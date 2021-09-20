@@ -1,37 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Data from '../Data/Data';
+import Album from './Album';
 
-function Card({ setItemResult }) {
+function Card({ slidetoggle, state }) {
+  const [isItem, setItem] = useState([]);
+
   const itemResult = (item) => {
-    setItemResult(item);
+    setItem(item);
   };
-  return (
+  return state ? (
     <>
-      <div className="flex justify-center items-center px-10">
-        {Data.map((item, id) => {
+      <div className="grid md:grid-cols-3 items-center justify-center px-16">
+        {Data.map((item) => {
           return (
-            <>
-              <div
-                key={item.id}
-                className="max-w-sm rounded overflow-hidden shadow-lg my-10"
-              >
-                <img
-                  src={item.photo[3]}
-                  onClick={() => itemResult(item.photo)}
-                  alt=""
-                  className="w-full"
-                />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-gray-800 text-xl mb-2">
-                    <p>{item.title}</p>
-                  </div>
+            <div key={item.id} onClick={slidetoggle}>
+              <img
+                className="w-full h-98 rounded overflow-hidden shadow-lg my-10 p-2 object-cover"
+                src={item.photo[2]}
+                onClick={() => itemResult(item.photo)}
+                alt=""
+              />
+              {/* <div className="px-6 py-4">
+                <div className="">
+                  <p>{item.title}</p>
                 </div>
-              </div>
-            </>
+              </div> */}
+            </div>
           );
         })}
       </div>
     </>
+  ) : (
+    <Album photo={isItem} />
   );
 }
 

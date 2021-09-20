@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar({ toggle }) {
   return (
@@ -41,7 +41,7 @@ export default function NavBar({ toggle }) {
         <Link className="p-4" to="/">
           Home
         </Link>
-        <Link className="p-4" to="/Gallery">
+        <Link className="p-4" to="/Gallery" onClick={toggle}>
           Gallery
         </Link>
         <Link className="p-4" to="/Contact">
