@@ -9,9 +9,6 @@ export default function Gallery() {
   const slideOpen = () => {
     setSlideOpen(!isSlideOpen);
   };
-  // const [{ photo }] = data;
-
-  // console.log(photo);
 
   return (
     <>

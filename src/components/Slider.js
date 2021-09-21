@@ -1,30 +1,35 @@
-import React, { useState } from 'react';
-import {
-  FaArrowCircleLeft,
-  FaArrowCircleRight,
-  FaRegWindowClose,
-} from 'react-icons/fa';
-import photo from '../Data/Data';
+import React from 'react';
+// import {
+//   FaArrowCircleLeft,
+//   FaArrowCircleRight,
+//   FaRegWindowClose,
+// } from 'react-icons/fa';
 
-export default function Slider({ isphoto, slideToggle, slideOpen }) {
+export default function Slider({ dataSlider }) {
   //   const [islenght, setlength] = useState();
-  const [isSlider, setSlider] = useState(0);
+  // const [isSlide, setSlide] = useState();
 
-  const rightArrow = () => {
-    setSlider(isSlider === photo.length - 1 ? 0 : isSlider + 1);
-  };
-  const leftArrow = () => {
-    setSlider(isSlider === 0 ? photo.length - 1 : isSlider - 1);
-  };
+  // console.log(isSlide);
+  //   const [isSlider, setSlider] = useState(0);
+
+  //   const rightArrow = () => {
+  //     setSlider(isSlider === slide.length - 1 ? 0 : isSlider + 1);
+  //   };
+  //   const leftArrow = () => {
+  //     setSlider(isSlider === 0 ? slide.length - 1 : isSlider - 1);
+  //   };
+
   return (
     <>
-      <div
-        className={slideOpen ? ' flex justify-center items-center' : 'hidden'}
-      >
-        <FaRegWindowClose onClick={slideToggle} />
+      <div className=" flex justify-center items-center">
+        {/* <FaRegWindowClose />
         <FaArrowCircleRight onClick={rightArrow} />
-        <FaArrowCircleLeft onClick={leftArrow} />
-        <img src={isphoto} alt="" className="w-auto h-screen object-contain" />
+        <FaArrowCircleLeft onClick={leftArrow} /> */}
+        {dataSlider.map((item) => {
+          return (
+            <img src={item} alt="" className="w-auto h-screen object-contain" />
+          );
+        })}
       </div>
     </>
   );

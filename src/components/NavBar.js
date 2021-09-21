@@ -13,10 +13,10 @@ export default function NavBar({ toggle }) {
     >
       <Link
         to="/"
-        className="h-14 w-14 rounded-full text-sm
+        className="h-12 w-12 rounded-full text-sm
         bg-black text-gray-200 flex select-none
             border-4 border-red-900 justify-center 
-            items-center overflow-hidden  justify md:ml-32"
+            items-center overflow-hidden  justify md:ml-32 box-content"
       >
         Thopz
       </Link>
@@ -25,7 +25,7 @@ export default function NavBar({ toggle }) {
         <svg
           onClick={toggle}
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-6"
+          className="h-12 w-6 "
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -38,7 +38,7 @@ export default function NavBar({ toggle }) {
           />
         </svg>
       </div>
-      <div className="mx-32 md:block hidden">
+      <div className="md:mx-32 md:flex item-content justify-content hidden">
         <Link className="p-4" to="/">
           Home
         </Link>
@@ -46,7 +46,7 @@ export default function NavBar({ toggle }) {
           Portfolio
         </Link>
         <Link className="p-4" to="/Contact">
-          Say Hello
+          Hello
         </Link>
         <Link className="p-4" to="/About">
           Stories
