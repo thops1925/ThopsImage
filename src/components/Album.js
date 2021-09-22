@@ -6,12 +6,16 @@ export default function Album({ photo }) {
   const modal = (index) => {
     setDataSlide(index);
   };
-  return (
+  const hideSlide = () => {
+    sethide(!hide);
+  };
+  const [hide, sethide] = useState(true);
+  return hide ? (
     <>
       <div className="grid md:grid-cols-3 items-center justify-center md:px-16 ">
         {photo.map((item, index) => {
           return (
-            <div key={item.id}>
+            <div key={item.id} onClick={hideSlide}>
               <img
                 key={index}
                 className="md:object-cover object-cover h-96 w-full md:p-2"
@@ -23,7 +27,8 @@ export default function Album({ photo }) {
           );
         })}
       </div>
-      <Slider dataSlider={isDataSlide} data={photo} />
     </>
+  ) : (
+    <Slider dataSlider={isDataSlide} data={photo} close={hideSlide} />
   );
 }

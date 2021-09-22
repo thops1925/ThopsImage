@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 const Data = [
   {
     id: uuidv4(),
-    title: 'beach',
+    title: 'Ariane',
     photo: [
       './images/ariane/1.jpg',
       './images/ariane/2.jpg',
@@ -16,7 +16,7 @@ const Data = [
   },
   {
     id: uuidv4(),
-    title: 'beach',
+    title: 'JP Wedding',
     photo: [
       './images/JP/1.jpg',
       './images/JP/2.jpg',
@@ -27,7 +27,7 @@ const Data = [
   },
   {
     id: uuidv4(),
-    title: 'beach',
+    title: 'Shierra',
     photo: [
       './images/santo/1.jpg',
       './images/santo/3.jpg',
@@ -40,7 +40,7 @@ const Data = [
   },
   {
     id: uuidv4(),
-    title: 'beach',
+    title: 'Paula',
     photo: [
       './images/pau/1.jpg',
       './images/pau/2.jpg',

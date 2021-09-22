@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function NavBar({ toggle }) {
   return (
     <nav
-      className="flex px-4 sticky top-0 pt-2
+      className="flex px-4 relative top-0 pt-2
       justify-between 
       md:justify-center md:items-center
        h-16 bg-white text-black 
