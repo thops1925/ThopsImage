@@ -32,7 +32,7 @@ export default function Home() {
           src={Cover}
           alt=""
         />
-        <Card />
+        {/* <Card /> */}
       </div>
     </>
   );
