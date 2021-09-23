@@ -18,9 +18,7 @@ function Card({ slidetoggle, state }) {
                 onClick={() => itemResult(item.photo)}
                 className="absolute inset-0 z-10 flex"
               >
-                <div className="absolute inset-0 opacity-30 bg-black hover:opacity-0 ">
-                  g
-                </div>
+                <div className="absolute inset-0 opacity-0 bg-black hover:opacity-0 "></div>
                 <div className="mx-auto text-white z-10 self-center uppercase  text-lg">
                   {item.title}
                 </div>

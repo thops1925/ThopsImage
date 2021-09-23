@@ -19,28 +19,29 @@ export default function Slider({ dataSlider, data, close }) {
 
   return (
     <>
-      <div className=" flex justify-center items-center  ">
+      <div className="container mx-auto flex justify-center items-center ">
         <div className="relative">
           <AiOutlineClose
             onClick={close}
-            className="absolute top-90 right-0  w-8 h-8  hover:opacity-100 opacity-40"
+            className="absolute w-8 h-8 bg-white hover:opacity-100  z-10 opacity-40 top-0 right-0 "
           />
+
           <img
             src={data[isSlider]}
             alt=""
-            className="w-auto h-screen object-contain "
+            className="w-auto h-screen object-contain relative "
           />
         </div>
-      </div>
-      <div className="flex justify-center absolute inset-x-0 bottom-5">
-        <AiOutlineLeft
-          onClick={leftArrow}
-          className="w-12 h-12  hover:opacity-100 opacity-40"
-        />
-        <AiOutlineRight
-          onClick={rightArrow}
-          className="w-12 h-12  hover:opacity-100 opacity-40 "
-        />
+        <div className="absolute flex justify-between bottom-0">
+          <AiOutlineLeft
+            onClick={leftArrow}
+            className="w-12 h-12 z-10 hover:opacity-100 hover:bg-gray-600 opacity-40"
+          />
+          <AiOutlineRight
+            onClick={rightArrow}
+            className="w-12 h-12 z-10 hover:opacity-100 hover:bg-gray-600 opacity-40 "
+          />
+        </div>
       </div>
     </>
   );
