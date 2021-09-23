@@ -10,18 +10,23 @@ function Card({ slidetoggle, state }) {
   };
   return state ? (
     <>
-      <div className="grid md:grid-cols-3 gap-1">
+      <div className="grid md:grid-cols-3 gap-1 md:mx-20 mx-10">
         {Data.map((item) => {
           return (
             <div key={item.id} onClick={slidetoggle} className="relative">
-              <div className="absolute inset-0 z-10 flex">
-                <div className="absolute inset-0 opacity-70 bg-gray"></div>
-                <div className="mx-auto text-white z-10 self-center uppercase">
+              <div
+                onClick={() => itemResult(item.photo)}
+                className="absolute inset-0 z-10 flex"
+              >
+                <div className="absolute inset-0 opacity-30 bg-black hover:opacity-0 ">
+                  g
+                </div>
+                <div className="mx-auto text-white z-10 self-center uppercase  text-lg">
                   {item.title}
                 </div>
               </div>
               <img
-                className="w-full h-98 rounded overflow-hidden shadow-lg my-10 p-2 object-cover"
+                className="w-full h-98 rounded overflow-hidden object-cover"
                 src={item.photo[2]}
                 onClick={() => itemResult(item.photo)}
                 alt=""
