@@ -43,14 +43,14 @@ export default function NavBar({ toggle }) {
           Home
         </Link>
         <Link className="p-4" to="/Gallery">
-          Portfolio
+        Gallery
         </Link>
         <Link className="p-4" to="/Contact">
-          Hello
+          Contact Us
         </Link>
-        <Link className="p-4" to="/About">
+        {/* <Link className="p-4" to="/About">
           Stories
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );
