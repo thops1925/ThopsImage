@@ -18,7 +18,7 @@ export default function Slider({ dataSlider, data, close }) {
   };
 
   return (
-    <>
+    <div>
       <div className="container mx-auto flex justify-center items-center ">
         <div className="relative">
           <AiOutlineClose
@@ -43,6 +43,6 @@ export default function Slider({ dataSlider, data, close }) {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

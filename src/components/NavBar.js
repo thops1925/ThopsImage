@@ -9,7 +9,6 @@ export default function NavBar({ toggle }) {
       md:justify-center md:items-center
        h-16 bg-white text-black 
        mx-90 shadow-sm font-mono "
-      role="navigation"
     >
       <Link
         to="/"
@@ -43,7 +42,7 @@ export default function NavBar({ toggle }) {
           Home
         </Link>
         <Link className="p-4" to="/Gallery">
-        Gallery
+          Gallery
         </Link>
         <Link className="p-4" to="/Contact">
           Contact Us

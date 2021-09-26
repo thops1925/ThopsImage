@@ -11,7 +11,7 @@ export default function Album({ photo }) {
   };
   const [hide, sethide] = useState(true);
   return hide ? (
-    <>
+    <div>
       <div className="grid md:grid-cols-3 items-center justify-center md:px-16 ">
         {photo.map((item, index) => {
           return (
@@ -27,7 +27,7 @@ export default function Album({ photo }) {
           );
         })}
       </div>
-    </>
+    </div>
   ) : (
     <Slider dataSlider={isDataSlide} data={photo} close={hideSlide} />
   );

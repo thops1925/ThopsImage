@@ -1,4 +1,3 @@
-import Navbar from './components/NavBar';
 import { Switch, Route } from 'react-router-dom';
 import React, { useState } from 'react';
 import Home from './Pages/Home';
@@ -7,6 +6,7 @@ import Gallery from './Pages/Gallery';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Dropdown from './components/Dropdown';
+import NavBar from './components/NavBar';
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -15,9 +15,10 @@ function App() {
     setOpen(!isOpen);
   };
   return (
-    <>
-      <Navbar toggle={toggle} />
+    <div>
+      <NavBar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/Gallery" component={Gallery} />
@@ -25,7 +26,7 @@ function App() {
         <Route path="/Contact" component={Contact} />
       </Switch>
       <Footer />
-    </>
+    </div>
   );
 }
 
