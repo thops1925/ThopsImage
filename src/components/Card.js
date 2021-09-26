@@ -7,7 +7,7 @@ function Card({ slideOpen, Data, setItem }) {
 
   return (
     <div>
-      <div className="grid md:grid-cols-3 gap-1 md:mx-20 mx-10">
+      <div className="grid md:grid-cols-3 gap-1 md:mx-20 mx-10 mb-10">
         {Data.map((item) => {
           return (
             <div>

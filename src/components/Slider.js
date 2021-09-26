@@ -19,7 +19,7 @@ export default function Slider({ dataSlider, data, close }) {
 
   return (
     <div>
-      <div className="container mx-auto flex justify-center items-center ">
+      <div className="container mx-auto flex justify-center items-center mb-10 mt-10">
         <div className="relative">
           <AiOutlineClose
             onClick={close}

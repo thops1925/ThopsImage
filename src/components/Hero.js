@@ -7,29 +7,30 @@ export default function Hero() {
   return (
     <div>
       <div
-        className="min-h-screen flex justify-center 
+        className="min-h-screen flex justify-center md:mx-56 
                   -center flex-col lg:flex-row lg:justify-around"
       >
-        <div className="my-5 mx-32 flex justify-center items-center flex-col lg:max-w-xl w-screen">
+        <div className=" md:flex md:items-center my-5  md:flex-col md:max-w-lg md:w-screen">
           <p
             className="mb-10 border-gray-200 text-gray-600 
-                      text-6xl justify-center items-start font-cursive font-thin"
+                      text-6xl flex justify-center items-center font-cursive font-thin mt-32 border-b-2 mx-10"
           >
             {title}
           </p>
-
-          <p className="  text-justify  text-gray-600  flex justify-center items-center font-thops ">
+          <p className="flex justify-center items-center font-thops mx-10 text-justify  text-gray-600  text-sm">
             {story}
           </p>
-          <p className="text-justify text-gray-600 flex justify-center items-center">
-            {description}
-          </p>
+          {/* <p className="text-justify text-gray-600 mt-10 font-thops font-bold ">
+            {/* {description} */}
+          {/* </p> */}
         </div>
 
         <img
-          className="lg:max-w-xl w-screen my-5 rounded-sm mx-32"
+          className="md:max-w-lg md:w-screen my-5 rounded-sm"
           src={Cover}
           alt=""
+          width="1920"
+          height="1080"
         />
       </div>
     </div>
