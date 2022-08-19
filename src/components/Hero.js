@@ -3,7 +3,7 @@ import Cover from '../Data/Cover';
 import About from '../Data/About';
 
 export default function Hero() {
-  const [{ title, description, story }] = About;
+  const [{ title, story }] = About;
   return (
     <div>
       <div

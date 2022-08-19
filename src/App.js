@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Footer from './components/Footer';
 import Gallery from './Pages/Gallery';
 import Contact from './Pages/Contact';
-import About from './Pages/About';
+// import About from './Pages/About';
 import Dropdown from './components/Dropdown';
 import NavBar from './components/NavBar';
 
