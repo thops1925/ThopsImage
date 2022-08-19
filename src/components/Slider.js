@@ -4,17 +4,16 @@ import { AiOutlineClose, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 
 export default function Slider({ dataSlider, data, close }) {
   const [isSlider, setSlider] = useState(0);
-  console.log(isSlider);
 
   useEffect(() => {
     setSlider(dataSlider);
   }, [dataSlider]);
 
   const rightArrow = () => {
-    setSlider(isSlider + 1);
+    setSlider(prev => prev + 1);
   };
   const leftArrow = () => {
-    setSlider(isSlider - 1);
+    setSlider(prev => prev - 1);
   };
 
   return (
@@ -28,7 +27,7 @@ export default function Slider({ dataSlider, data, close }) {
 
           <img
             src={data[isSlider]}
-            alt=""
+            alt={data[isSlider]}
             className="w-auto h-screen object-contain relative "
           />
         </div>

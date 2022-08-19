@@ -10,14 +10,15 @@ export default function Album({ photo }) {
     sethide(!hide);
   };
   const [hide, sethide] = useState(true);
+
   return hide ? (
     <div>
       <div className="grid md:grid-cols-3 items-center justify-center md:px-16 mb-10">
         {photo.map((item, index) => {
           return (
-            <div key={item.id} onClick={hideSlide}>
+            <div key={index} onClick={hideSlide}>
               <img
-                key={index}
+                key={item.id}
                 className="md:object-cover object-cover h-96 w-full md:p-2"
                 src={item}
                 alt=""
@@ -29,6 +30,6 @@ export default function Album({ photo }) {
       </div>
     </div>
   ) : (
-    <Slider dataSlider={isDataSlide} data={photo} close={hideSlide} />
+    <Slider key={photo.id} dataSlider={isDataSlide} data={photo} close={hideSlide} />
   );
 }
