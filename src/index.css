@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=PT+Serif&display=swap');
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@tailwind base; /* tailwind base */
+@tailwind components;   /* tailwind components */
+@tailwind utilities;    /* tailwind utilities */
+
 
