@@ -8,7 +8,6 @@ const Result = () => {
 export default function Contact() {
   const [result, setResult] = useState(false);
   const form = useRef();
-  console.log(form);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -47,7 +46,6 @@ export default function Contact() {
               First name
             </label>
             <input
-              required="true"
               name="name"
               type="text"
               className="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -58,7 +56,6 @@ export default function Contact() {
               Email
             </label>
             <input
-              required="true"
               name="email"
               type="email"
               className="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -71,7 +68,6 @@ export default function Contact() {
               Subject
             </label>
             <input
-              required="true"
               name="subject"
               type="text"
               className="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

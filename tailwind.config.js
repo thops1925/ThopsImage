@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         thops: ['PT Serif', 'serif'],
         cursive: ['Grey Qo', ' cursive'],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

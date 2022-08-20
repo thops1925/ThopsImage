@@ -7,6 +7,8 @@ import Contact from './Pages/Contact';
 // import About from './Pages/About';
 import Dropdown from './components/Dropdown';
 import NavBar from './components/NavBar';
+// import Album from './components/Album';
+// import Card from './components/Card';
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -15,13 +17,14 @@ function App() {
     setOpen(!isOpen);
   };
   return (
-    <div>
+    <div className='w-full overflow-hidden '>
       <NavBar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
 
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/Gallery" component={Gallery} />
+        {/* <Route path="/Gallery/Card" component={Card} /> */}
         {/* <Route path="/About" component={About} /> */}
         <Route path="/Contact" component={Contact} />
       </Switch>
