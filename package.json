@@ -35,11 +35,10 @@
       "react-app/jest"
     ]
   },
-  
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
     "prettier": "2.3.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
