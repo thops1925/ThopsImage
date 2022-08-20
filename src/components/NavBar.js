@@ -38,13 +38,13 @@ export default function NavBar({ toggle }) {
         </svg>
       </div>
       <div className="md:mx-32 md:flex item-content justify-content hidden">
-        <Link className="p-4" to="/">
+        <Link className="p-4 font-poppins font-semibold" to="/">
           Home
         </Link>
-        <Link className="p-4" to="/Gallery">
+        <Link className="p-4 font-poppins font-semibold" to="/Gallery">
           Gallery
         </Link>
-        <Link className="p-4" to="/Contact">
+        <Link className="p-4 font-poppins font-semibold" to="/Contact">
           Contact Us
         </Link>
         {/* <Link className="p-4" to="/About">
