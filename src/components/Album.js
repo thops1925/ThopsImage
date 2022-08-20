@@ -20,7 +20,7 @@ export default function Album({ photo }) {
                 key={item.id}
                 className="md:object-cover object-cover h-96 w-full md:p-2"
                 src={item}
-                alt=""
+                alt="cover"
                 onClick={() => modal(index)}
               />
             </div>
